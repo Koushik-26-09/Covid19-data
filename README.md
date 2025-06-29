@@ -89,113 +89,73 @@ To connect to a different backend server, modify the `API_BASE_URL` constant in 
 ```javascript
 const API_BASE_URL = 'http://your-server:port';
 ```
-### Authentication Headers
+## 🔐 Authentication Headers
 
-- All protected API calls automatically include:
+All protected API calls automatically include:
 
-- Authorization: Bearer <jwtToken>
+Authorization: Bearer 
 
-🎨 Design Features
 
-Responsive Design
- - Works on desktop, tablet, and mobile devices
-Clean UI
- - Professional card-based layout with consistent spacing
-Color Scheme
- - Light background (#f0f2f5) with blue accent colors
-Interactive Elements
- - Hover effects on buttons and table rows
-Loading States
- - Visual feedback during API calls
-Error Handling
- - Clear error messages with appropriate styling
-📊 Data Display
+## 🎨 Design Features
 
-States Table
+### Responsive Design
+- Works on desktop, tablet, and mobile devices
 
-State ID, Name, and Population
-Sortable and hoverable rows
-Responsive design for mobile devices
-Statistics Cards
+### Clean UI
+- Professional card-based layout with consistent spacing
 
-Visual representation of COVID-19 data
-Total Cases, Cured, Active, Deaths
-Grid layout that adapts to screen size
-Forms
+### Color Scheme
+- Light background (#f0f2f5) with blue accent colors
 
-Consistent styling across all input forms
-Real-time validation feedback
-Auto-clearing after successful operations
-🔒 Security Features
+### Interactive Elements
+- Hover effects on buttons and table rows
 
-JWT token storage in localStorage
-Automatic token inclusion in API requests
-Session timeout handling
-Secure logout with token cleanup
-Input validation and sanitization
-🐛 Error Handling
+### Loading States
+- Visual feedback during API calls
 
-Network error detection and user-friendly messages
-API error response handling
-Form validation with inline error display
-Confirmation dialogs for destructive operations
-📱 Mobile Responsiveness
+### Error Handling
+- Clear error messages with appropriate styling
 
-Flexible grid layout that adapts to screen size
-Touch-friendly button sizes
-Readable text on small screens
-Optimized form layouts for mobile input
-🔄 API Integration
+## 📊 Data Display
 
-Request Format
+### States Table
+- State ID, Name, and Population
+- Sortable and hoverable rows
+- Responsive design for mobile devices
 
+### Statistics Cards
+- Visual representation of COVID-19 data
+- Total Cases, Cured, Active, Deaths
+- Grid layout that adapts to screen size
+
+### Forms
+- Consistent styling across all input forms
+- Real-time validation feedback
+- Auto-clearing after successful operations
+
+## 🔒 Security Features
+
+- JWT token storage in localStorage
+- Automatic token inclusion in API requests
+- Session timeout handling
+- Secure logout with token cleanup
+- Input validation and sanitization
+
+## 🐛 Error Handling
+
+- Network error detection and user-friendly messages
+- API error response handling
+- Form validation with inline error display
+- Confirmation dialogs for destructive operations
+
+## 📱 Mobile Responsiveness
+
+- Flexible grid layout that adapts to screen size
+- Touch-friendly button sizes
+- Readable text on small screens
+- Optimized form layouts for mobile input
+
+## 🔄 API Integration
+
+### Request Format
 All API requests use JSON format with proper headers:
-
-{
-  headers: {
-    'Authorization': 'Bearer <token>',
-    'Content-Type': 'application/json'
-  }
-}
-
-Response Handling
-
-Success responses display data in formatted tables/cards
-Error responses show user-friendly error messages
-Loading states provide visual feedback during requests
-🚀 Getting Started Guide
-
-First Time Setup
-Open 
-index.html
- in your browser
-Click "Switch to Register" to create a new account
-Fill in all required fields and click "Register"
-Login Process
-Enter your username and password
-Click "Login" to access the dashboard
-Your session will be remembered until you logout
-Using the Dashboard
-Each section has clearly labeled buttons and forms
-Fill in required fields before clicking action buttons
-Results will appear in the designated areas below each section
-Use the logout button to end your session
-📞 Support
-
-If you encounter any issues:
-
-Check that your backend server is running on the correct port
-Verify the API endpoints match your backend implementation
-Check browser console for detailed error messages
-Ensure you have a stable internet connection
-🔮 Future Enhancements
-
-Data export functionality
-Advanced filtering and search
-Real-time data updates
-Bulk operations for districts
-Data visualization charts
-User role management
-Note
-: This application requires a compatible Node.js + Express + SQLite backend with the specified API endpoints. Make sure your backend is properly configured and running before using this frontend application.
-
