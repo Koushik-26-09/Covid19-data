@@ -55,7 +55,7 @@ Ensure your Node.js backend is running with the following endpoints:
 ### 2. Launch Application
 1. Save the provided HTML code as `index.html`
 2. Open `index.html` in your web browser
-3. The application will automatically load the login/register interface
+3. The application will automatically load the login interface
 
 ### 3. Initial Login
 Use the default credentials to get started:
