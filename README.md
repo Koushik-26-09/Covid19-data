@@ -1,4 +1,3 @@
-I'll create a comprehensive README file for your COVID-19 Management Dashboard project!
 
 # COVID-19 Management Dashboard
 
@@ -7,7 +6,6 @@ A complete single-page web application for managing COVID-19 data with user auth
 ## 🚀 Features
 
 ### Authentication
-- **User Registration** - Create new accounts with username, name, password, gender, and location
 - **User Login** - Secure JWT-based authentication
 - **Session Management** - Automatic token storage and logout functionality
 
@@ -42,16 +40,16 @@ A complete single-page web application for managing COVID-19 data with user auth
 ### 1. Setup Backend
 Ensure your Node.js backend is running with the following endpoints:
 
-POST /login/
-POST /register/
-GET /states/
-GET /states/:stateId/
-POST /districts/
-GET /districts/:districtId/
-DELETE /districts/:districtId/
-PUT /districts/:districtId/
-GET /states/:stateId/stats/
-GET /districts/:districtId/details/
+- POST /login/
+- POST /register/
+- GET /states/
+- GET /states/:stateId/
+- POST /districts/
+- GET /districts/:districtId/
+- DELETE /districts/:districtId/
+- PUT /districts/:districtId/
+- GET /states/:stateId/stats/
+- GET /districts/:districtId/details/
 
 
 ### 2. Launch Application
@@ -62,13 +60,11 @@ GET /districts/:districtId/details/
 ### 3. Initial Login
 Use the default credentials to get started:
 - **Username**: `koushik`
-- **Password**: `[your_password]`
-
-*Note: Replace `[your_password]` with the actual password for the koushik account in your database*
+- **Password**: `koushik`
 
 ## 📱 User Interface
 
-### Login/Register Screen
+### Login Screen
 - Clean, centered authentication forms
 - Toggle between login and register modes
 - Form validation with error messaging
@@ -155,7 +151,4 @@ Authorization: Bearer
 - Readable text on small screens
 - Optimized form layouts for mobile input
 
-## 🔄 API Integration
 
-### Request Format
-All API requests use JSON format with proper headers:
