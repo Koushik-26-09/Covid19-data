@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 State & District Management</title>
+    <link href="index.html" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>COVID-19 Management System</h1>
+            <p>State & District Data Management Portal</p>
+        </div>
+
+        <!-- Login Section -->
+        <div id="loginSection" class="login-section">
+            <div class="card">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <button onclick="login()">Login</button>
+            </div>
+        </div>
+
+        <!-- Main Content (Hidden until login) -->
+        <div id="mainContent" class="hidden">
+            <div class="main-content">
+                <!-- States Management -->
+                <div class="card">
+                    <h2>States Management</h2>
+                    <button onclick="fetchAllStates()">Fetch All States</button>
+                    
+                    <div class="form-group" style="margin-top: 20px;">
+                        <label for="stateId">State ID</label>
+                        <input type="number" id="stateId" placeholder="Enter state ID">
+                    </div>
+                    <button class="btn-secondary" onclick="fetchStateById()">Fetch State Details</button>
+                    <button class="btn-success" onclick="fetchStateStats()">Fetch State Stats</button>
+                    
+                    <div id="statesResult"></div>
+                </div>
+
+                <!-- Districts Management -->
+                <div class="card">
+                    <h2>Districts Management</h2>
+                    
+                    <h3 style="margin-bottom: 15px; color: #666;">Add New District</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="districtName">District Name</label>
+                            <input type="text" id="districtName" placeholder="Enter district name">
+                        </div>
+                        <div class="form-group">
+                            <label for="districtStateId">State ID</label>
+                            <input type="number" id="districtStateId" placeholder="State ID">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cases">Cases</label>
+                            <input type="number" id="cases" placeholder="Total cases">
+                        </div>
+                        <div class="form-group">
+                            <label for="cured">Cured</label>
+                            <input type="number" id="cured" placeholder="Cured cases">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="active">Active</label>
+                            <input type="number" id="active" placeholder="Active cases">
+                        </div>
+                        <div class="form-group">
+                            <label for="deaths">Deaths</label>
+                            <input type="number" id="deaths" placeholder="Deaths">
+                        </div>
+                    </div>
+                    
+                    <button class="btn-success" onclick="addDistrict()">Add District</button>
+                    
+                    <hr style="margin: 30px 0; border: none; border-top: 1px solid #e1e5e9;">
+                    
+                    <h3 style="margin-bottom: 15px; color: #666;">Manage Existing District</h3>
+                    <div class="form-group">
+                        <label for="manageDistrictId">District ID</label>
+                        <input type="number" id="manageDistrictId" placeholder="Enter district ID">
+                    </div>
+                    <button class="btn-secondary" onclick="fetchDistrictById()">Fetch District</button>
+                    <button onclick="updateDistrict()">Update District</button>
+                    <button class="btn-danger" onclick="deleteDistrict()">Delete District</button>
+                    
+                    <div id="districtsResult"></div>
+                </div>
+            </div>
+            
+            <div class="card" style="text-align: center;">
+                <button class="btn-danger" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+   </body>
+</html>
